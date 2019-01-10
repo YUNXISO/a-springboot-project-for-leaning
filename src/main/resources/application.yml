@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/dbgirl?serverTimezone=GMT
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  devtools:
+    restart:
+      trigger-file: version.txt
+  resources:
+    static-locations: classpath:/META-INF/resources/ ,classpath:/static/ ,classpath:/public/ ,classpath:/resources/,file${web.image-path}
+
+web:
+  image-path:
+    C:\Users\CN YUNXISO\Pictures
+#    G:\girl\src\main\resources\static\img
+
+testpro:
+  name: leo
+  age: 10
+  sex: male
+
+testpro2:
+  name: sam
+  age: 15
+  sex: Female
