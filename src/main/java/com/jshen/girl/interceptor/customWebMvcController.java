@@ -10,6 +10,8 @@ public class customWebMvcController implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new LoginInterceptor()).addPathPatterns("/hello");
         //拦截全部时最末尾需要“**”，普通子目录只用“*”
+        registry.addInterceptor(new secondInterceptor()).addPathPatterns("/hello");
+//        先注册先拦截
         WebMvcConfigurer.super.addInterceptors(registry);
     }
 }
