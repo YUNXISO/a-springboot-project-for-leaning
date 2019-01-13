@@ -1,9 +1,8 @@
 package com.jshen.girl.servlet;
 
-import com.jshen.girl.POJO.MyException;
+import com.jshen.girl.PO.MyException;
 
 import javax.servlet.*;
-import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -33,7 +32,9 @@ public class servletFilter implements Filter {
             filterChain.doFilter(servletRequest,servletResponse);
         }else{
 //            throw new MyException("555","权限不足");
-              response.sendRedirect("/error.html");
+            /**
+//              response.sendRedirect("/error.html");
+*/
 
         }
     }

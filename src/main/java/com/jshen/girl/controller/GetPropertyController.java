@@ -1,9 +1,7 @@
 package com.jshen.girl.controller;
 
-import com.jshen.girl.POJO.TestProerty;
+import com.jshen.girl.PO.TestProerty;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

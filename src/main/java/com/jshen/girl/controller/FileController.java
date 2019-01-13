@@ -1,6 +1,8 @@
 package com.jshen.girl.controller;
 
-import com.jshen.girl.POJO.UpdateResult;
+import com.jshen.girl.PO.UpdateResult;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,10 +12,14 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.util.UUID;
 
+@PropertySource({"classpath:application.yml"})
 @RestController
 public class FileController {
 
     private static final String filePath = "G:/girl/src/main/resources/static/img/";
+
+    @Value("{web.filepath}")
+    private   String filePath2;
 
     @PostMapping("/update")
     public UpdateResult updateFile(@RequestParam ("head_img") MultipartFile file,

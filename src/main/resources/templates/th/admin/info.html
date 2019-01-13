@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>thymleaf测试</title>
+</head>
+<body>
+<h1>这是一个测试内容，无th标签,如果后端传入值则会被替换</h1>
+<h1 th:text="${proerty.getName()}" >这是一个测试内容，有th标签,如果后端传入值则会被替换</h1>
+</body>
+</html>

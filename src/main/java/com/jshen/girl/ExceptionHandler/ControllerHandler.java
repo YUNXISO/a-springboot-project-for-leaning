@@ -2,7 +2,7 @@ package com.jshen.girl.ExceptionHandler;
 
 
 
-import com.jshen.girl.POJO.MyException;
+import com.jshen.girl.PO.MyException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -34,11 +34,13 @@ public class ControllerHandler {
     @ExceptionHandler(value = MyException.class)
     Object myExceptionhandle (MyException e ,HttpServletRequest request){
 
-//        thymleaf跳转
-//        ModelAndView modelAndView = new ModelAndView();
-//        modelAndView.setViewName("error.html");
-//        modelAndView.addObject("msg",e.getMsg());
-//        return modelAndView;
+        /**
+        thymleaf跳转
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("error.html");
+        modelAndView.addObject("msg",e.getMsg());
+        return modelAndView;
+         */
 
 //        json返回错误
         Map<String,Object> map = new HashMap<>(16);

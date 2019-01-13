@@ -1,4 +1,4 @@
-package com.jshen.girl.POJO;
+package com.jshen.girl.PO;
 
 public class UpdateResult {
     private String code;

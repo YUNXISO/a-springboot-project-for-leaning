@@ -1,7 +1,6 @@
-package com.jshen.girl.POJO;
+package com.jshen.girl.PO;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import org.springframework.stereotype.Component;
 
 import java.util.Date;
 

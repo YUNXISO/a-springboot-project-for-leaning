@@ -1,6 +1,6 @@
 package com.jshen.girl.controller;
 
-import com.jshen.girl.POJO.MyException;
+import com.jshen.girl.PO.MyException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -14,6 +14,41 @@ spring:
   resources:
     static-locations: classpath:/META-INF/resources/ ,classpath:/static/ ,classpath:/public/ ,classpath:/resources/,file${web.image-path}
 
+  freemarker:
+#    生产环境下建议开启tymeleaf缓存，本地为false
+    cache: false
+
+    charset: UTF-8
+    allow-request-override: false
+    check-template-location: true
+#    整合
+    content-type: text/html
+    expose-request-attributes: true
+    expose-session-attributes: true
+#    文件后缀
+    suffix: .ftl
+#    文件夹下最后加上‘/’
+    template-loader-path: classpath:/templates/fm/
+
+
+  thymeleaf:
+    #开发时关闭缓存,不然没法看到实时页面
+    cache: false
+    mode: HTML5
+    #前缀
+    #文件夹下最后加上‘/’
+    prefix: classpath:/templates/th/
+    #编码
+    encoding: UTF-8
+#    类型
+    servlet:
+      content-type: text/html
+#      后缀
+    suffix: .html
+
+
+
+
 web:
   image-path:
     C:\Users\CN YUNXISO\Pictures

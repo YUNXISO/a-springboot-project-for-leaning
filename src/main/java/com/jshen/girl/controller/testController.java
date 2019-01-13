@@ -1,7 +1,7 @@
 package com.jshen.girl.controller;
 
-import com.jshen.girl.POJO.JsonTest;
-import com.jshen.girl.POJO.MyException;
+import com.jshen.girl.PO.JsonTest;
+import com.jshen.girl.PO.MyException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.web.bind.annotation.GetMapping;
