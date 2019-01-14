@@ -1,4 +1,4 @@
-package com.jshen.girl.dao;
+package com.jshen.girl.PO.DTO;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

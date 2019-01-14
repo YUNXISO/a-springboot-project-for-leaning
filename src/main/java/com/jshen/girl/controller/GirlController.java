@@ -1,6 +1,6 @@
 package com.jshen.girl.controller;
 
-import com.jshen.girl.dao.Girl;
+import com.jshen.girl.PO.DTO.Girl;
 import com.jshen.girl.dao.GirlRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

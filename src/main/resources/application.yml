@@ -1,16 +1,22 @@
 spring:
   datasource:
+    #mybatis.type-aliases-package=net.xdclass.base_project.domain
+    #可以自动识别
+    #spring.datasource.driver-class-name =com.mysql.jdbc.Driver
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/dbgirl?serverTimezone=GMT
     username: root
     password: root
+    type: com.alibaba.druid.pool.DruidDataSource
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+
   devtools:
     restart:
       trigger-file: version.txt
+
   resources:
     static-locations: classpath:/META-INF/resources/ ,classpath:/static/ ,classpath:/public/ ,classpath:/resources/,file${web.image-path}
 
@@ -30,7 +36,6 @@ spring:
 #    文件夹下最后加上‘/’
     template-loader-path: classpath:/templates/fm/
 
-
   thymeleaf:
     #开发时关闭缓存,不然没法看到实时页面
     cache: false
@@ -45,6 +50,7 @@ spring:
       content-type: text/html
 #      后缀
     suffix: .html
+
 
 
 
