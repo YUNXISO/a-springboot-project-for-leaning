@@ -51,9 +51,9 @@ spring:
 #      后缀
     suffix: .html
 
-
-
-
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 web:
   image-path:
