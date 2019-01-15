@@ -69,3 +69,7 @@ testpro2:
   name: sam
   age: 15
   sex: Female
+
+bean1:
+  name: leo
+  age: 15
