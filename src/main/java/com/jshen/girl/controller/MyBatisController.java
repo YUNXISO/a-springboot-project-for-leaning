@@ -34,8 +34,32 @@ public class MyBatisController {
         Integer id = userService.add(user);
 
         return id;
-
     }
+
+    @GetMapping("/api/delete")
+    public Object delete(Long id){
+        return userService.deleteUser(id);
+    }
+
+    @GetMapping("/api/update")
+    public Object update(String name,int id){
+        User user = new User();
+        user.setName(name);
+        user.setId(id);
+        return userService.updateUser(user);
+    }
+
+        @GetMapping("/api/findById")
+    public Object findById(Long id){
+        return userService.findById(id);
+    }
+
+    @GetMapping("/api/findAll")
+    public Object findById(){
+        return userService.findAll();
+    }
+
+
 
 
 }
